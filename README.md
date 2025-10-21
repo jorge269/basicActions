@@ -272,5 +272,3 @@ When all students have completed **Level 3**:
 🧩 **Instructor’s note:**  
 This repository simulates a real-world development workflow.  
 You’ll learn how modern teams work with **CI/CD, testing, quality gates, and branch protection** — essential skills for any DevOps or Cloud Engineer.
-
-test
