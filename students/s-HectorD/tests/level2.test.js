@@ -1,4 +1,4 @@
-const { sumaMenoresQueN, teoremaPitagoras, isIsogram } = require('./level2');
+const { sumaMenoresQueN, teoremaPitagoras, isIsogram } = require('../src/level2');
 
 describe('Level 2 - Test', () => {
 

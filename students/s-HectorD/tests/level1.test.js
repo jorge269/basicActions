@@ -1,5 +1,5 @@
 
-const { esAutomorfico, sumArray, esBisiesto } = require('./level1');
+const { esAutomorfico, sumArray, esBisiesto } = require('../src/level1');
 
 describe('Level 1 - Test', () => {
 

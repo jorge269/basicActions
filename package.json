@@ -9,8 +9,11 @@
     "complexity": "cr students/"
   },
   "devDependencies": {
-    "jest": "^29",
+    "complexity-report": "^2.0.0-alpha",
     "eslint": "^8",
-    "complexity-report": "^2.0.0-alpha"
+    "jest": "^29"
+  },
+  "dependencies": {
+    "dependencies": "^0.0.1"
   }
 }

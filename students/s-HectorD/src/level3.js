@@ -20,28 +20,21 @@ function esKaprekar(num) {
   return false;
 }
 
-function tipoDeTriangulo(a, b, c) {
-  // Validar que sea un triángulo
+function esTrianguloValido(a, b, c) {
+
   if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
-    return "No es un triángulo (lados deben ser números)";
+    return { isValid: false, error: "No es un triángulo (lados deben ser números)" };
   }
   
   if (a <= 0 || b <= 0 || c <= 0) {
-    return "No es un triángulo (lados deben ser positivos)";
+    return { isValid: false, error: "No es un triángulo (lados deben ser positivos)" };
   }
   
   if (a + b <= c || a + c <= b || b + c <= a) {
-    return "No es un triángulo (desigualdad triangular)";
+    return { isValid: false, error: "No es un triángulo (desigualdad triangular)" };
   }
   
-  // Clasificar por lados
-  if (a === b && b === c) {
-    return "Equilátero";
-  } else if (a === b || a === c || b === c) {
-    return "Isósceles";
-  } else {
-    return "Escaleno";
-  }
+  return { isValid: true, error: null };
 }
 
 function esArmstrong(num) {
@@ -58,6 +51,6 @@ function esArmstrong(num) {
 
 module.exports = {
   esKaprekar,
-  tipoDeTriangulo,
+  esTrianguloValido,
   esArmstrong
 };
