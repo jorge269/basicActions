@@ -5,6 +5,7 @@
     "test": "jest --runInBand",
     "test:coverage": "jest --coverage",
     "lint": "eslint students/",
+    "lint:fix": "eslint students/ --fix",
     "complexity": "cr students/"
   },
   "devDependencies": {
